@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <style>
+        /* CSS Reset & Variables */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Hero Section */
+        header {
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .bio {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        /* Section Title */
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--card-bg);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-color);
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent-color);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        .project-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact & Footer */
+        .contact-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--text-color);
+            border: 1px solid var(--text-muted);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--text-color);
+        }
+
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- En-tête -->
+        <header>
+            <h1>Alexandre Dupont</h1>
+            <p class="subtitle">Développeur Web & Créateur Digital</p>
+            <p class="bio">
+                Je conçois des applications web modernes, rapides et accessibles. 
+                Passionné par l'expérience utilisateur et les architectures propres.
+            </p>
+        </header>
+
+        <!-- Projets -->
+        <section>
+            <h2>Projets récents</h2>
+            <div class="projects-grid">
+                
+                <!-- Projet 1 -->
+                <div class="project-card">
+                    <h3 class="project-title">Plateforme E-commerce</h3>
+                    <p class="project-desc">Une boutique en ligne minimale avec gestion du panier et paiement sécurisé.</p>
+                    <div class="tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Stripe</span>
+                    </div>
+                    <a href="#" class="project-link">Voir le projet &rarr;</a>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card">
+                    <h3 class="project-title">Application Dashboard</h3>
+                    <p class="project-desc">Tableau de bord d'analyse de données en temps réel pour PME.</p>
+                    <div class="tags">
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">Tailwind</span>
+                        <span class="tag">Chart.js</span>
+                    </div>
+                    <a href="#" class="project-link">Voir le projet &rarr;</a>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card">
+                    <h3 class="project-title">API REST Météo</h3>
+                    <p class="project-desc">Microservice fournissant des prévisions météorologiques locales agrégées.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Docker</span>
+                    </div>
+                    <a href="#" class="project-link">Voir le code GitHub &rarr;</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section>
+            <h2>Me contacter</h2>
+            <div class="contact-links">
+                <a href="mailto:alexandre@example.com" class="btn">Envoyer un e-mail</a>
+                <a href="https://linkedin.com" target="_blank" class="btn btn-outline">LinkedIn</a>
+                <a href="https://github.com" target="_blank" class="btn btn-outline">GitHub</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Alexandre Dupont. Tous droits réservés.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
