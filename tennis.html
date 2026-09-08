@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Développeur Fullstack 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #e5e5e5; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(45deg, #3b82f6, #10b981); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="p-6 md:p-12">
 
+    <!-- Header -->
+    <header class="max-w-5xl mx-auto mb-20">
+        <h1 class="text-4xl font-extrabold tracking-tight mb-2">LENGLIN <span class="gradient-text">Marian</span></h1>
+        <p class="text-gray-400 text-lg">Développeur de conneries</p>
+    </header>
+
+    <main class="max-w-5xl mx-auto">
+        
+        <!-- Section Projets -->
+        <section>
+            <h2 class="text-sm uppercase tracking-widest text-gray-500 font-semibold mb-8">Projets Sélectionnés</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Projet 1: Tenis de table -->
+                <div class="glass p-8 rounded-2xl hover:border-blue-500 transition-all group">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-mono text-blue-400">GenAI • Next.js • Pinecone</span>
+                        <a href="tennis.html" class="group-hover:translate-x-1 transition-transform">→</a>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Tennis de Table</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quod provident corporis, laboriosam deserunt velit qui odio, officiis, ullam ea nesciunt dolorem asperiores aliquid numquam voluptatem eligendi. Itaque, ipsam laborum..
+                    </p>
+                </div>
+
+                <!-- Projet 2: Micro-SaaS -->
+                <div class="glass p-8 rounded-2xl hover:border-emerald-500 transition-all group">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-mono text-emerald-400">Micro-SaaS • Tailwind v4 • Passkeys</span>
+                        <a href="#" class="group-hover:translate-x-1 transition-transform">→</a>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">FocusFlow</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Outil de gestion de flux de travail minimaliste pour artisans. Authentification sans mot de passe (Passkeys) et interface "Barely There" ultra-rapide.
+                    </p>
+                </div>
+
+                <!-- Projet 3: Browser Extension -->
+                <div class="glass p-8 rounded-2xl hover:border-purple-500 transition-all group">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-mono text-purple-400">DOM API • TypeScript • Browser Extension</span>
+                        <a href="#" class="group-hover:translate-x-1 transition-transform">→</a>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">CleanHire Extension</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Extension Chrome/Firefox qui nettoie les plateformes de recrutement des offres "ghost" et ajoute un score de compatibilité technique en temps réel.
+                    </p>
+                </div>
+
+                <!-- Projet 4: Open Source -->
+                <div class="glass p-8 rounded-2xl hover:border-orange-500 transition-all group">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-mono text-orange-400">Rust • API • Performance</span>
+                        <a href="#" class="group-hover:translate-x-1 transition-transform">→</a>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">FastRoute Lib</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Bibliothèque de routage ultra-légère développée en Rust, optimisée pour les environnements Edge Computing et les fonctions Serverless.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Stack Technique -->
+        <section class="mt-20">
+            <h2 class="text-sm uppercase tracking-widest text-gray-500 font-semibold mb-8">Expertise 2026</h2>
+            <div class="flex flex-wrap gap-4">
+                <span class="px-4 py-2 glass rounded-full text-xs">TypeScript 5.x</span>
+                <span class="px-4 py-2 glass rounded-full text-xs">Next.js 16 (App Router)</span>
+                <span class="px-4 py-2 glass rounded-full text-xs">Tailwind CSS v4</span>
+                <span class="px-4 py-2 glass rounded-full text-xs">PostgreSQL + Prisma</span>
+                <span class="px-4 py-2 glass rounded-full text-xs">LangChain / OpenAI SDK</span>
+                <span class="px-4 py-2 glass rounded-full text-xs">Docker & Kubernetes</span>
+            </div>
+        </section>
+
+    </main>
+<!-- Section Contact -->
+<section id="contact" class="py-16 bg-slate-900 text-white">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4">Me Contacter</h2>
+    <p class="text-gray-300 mb-8">N'hésitez pas à me contacter pour toute opportunité ou question sur mes projets.</p>
+... (34lignes restantes)
